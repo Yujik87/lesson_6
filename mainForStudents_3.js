@@ -75,7 +75,7 @@ console.log(students[0] === deepCopyStudents[0]) /*false*/
 // Вывод результатов - в консоль
 
 //5. Отсортируйте deepCopyStudents по алфавиту (sort)
-let sortByName;
+let sortByName = deepCopyStudents.sort((a,b) => (a.name < b.name ? -1 : 1));
 console.log(sortByName);
 
 //5a. Отсортируйте deepCopyStudents по успеваемости(лучший идёт первым)(sort)
