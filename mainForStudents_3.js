@@ -79,7 +79,7 @@ let sortByName = deepCopyStudents.sort((a,b) => (a.name < b.name ? -1 : 1));
 console.log(sortByName);
 
 //5a. Отсортируйте deepCopyStudents по успеваемости(лучший идёт первым)(sort)
-let sortByScores;
+let sortByScores = deepCopyStudents.sort((a,b) => (a.scores < b.scores ? 1 : -1));
 console.log(sortByScores);
 
 //6. Сформируйте массив студентов, у которых 100 и более баллов (filter)
